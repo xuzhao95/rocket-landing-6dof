@@ -11,8 +11,8 @@ ENV_ID = "rocket_environment-v0"
 N_ENVS = 8
 TOTAL_TIMESTEPS = 5_000_000
 SEED = 42
-CHECKPOINT_DIR = BASE_DIR / "checkpoints_v3"
-INITIAL_MODEL = BASE_DIR / "model_ppo_v2.zip"
+CHECKPOINT_DIR = BASE_DIR / "checkpoints"
+INITIAL_MODEL = BASE_DIR / "model_ppo.zip"
 
 
 def _latest_checkpoint() -> Path | None:

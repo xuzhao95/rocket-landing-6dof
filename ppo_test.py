@@ -27,7 +27,7 @@ from stable_baselines3 import PPO
 
 BASE_DIR = Path(__file__).resolve().parent
 ENV_ID = "rocket_environment-v0"
-MODEL_PATH = BASE_DIR / "model_ppo"  # 想看历史版本可改成 model_ppo_v2 / model_ppo_v1
+MODEL_PATH = BASE_DIR / "model_ppo"
 
 NUM_EPISODES = 3
 SEED_OFFSET = 100

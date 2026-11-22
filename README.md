@@ -35,7 +35,7 @@ pip install gymnasium stable-baselines3 numpy matplotlib
 | `ppo.py` | PPO 训练脚本，支持检查点与断点续训 |
 | `ppo_test.py` | 加载模型并 3D 渲染查看着陆效果 |
 | `model_ppo.zip` | 训练好的模型（当前最佳） |
-| `checkpoints_v3/` | 微调阶段的检查点 |
+| `checkpoints/` | 微调阶段的检查点 |
 | `assets/` | README 配图（训练曲线、着陆轨迹） |
 
 ## 训练
@@ -48,8 +48,6 @@ python ppo.py
 
 ![训练曲线](assets/training_curves.png)
 
-三个阶段依次为：基础训练、加入着陆速度惩罚、放宽下滑道约束后微调。第一阶段的奖励在约 2400 万步后趋于平台，因此后续不再盲目延长训练。
-
 ## 查看效果
 
 ```bash
@@ -60,11 +58,11 @@ python ppo_test.py
 
 - `RENDER_PAUSE`：每帧暂停秒数（越小越快）
 - `NUM_EPISODES`：测试回合数
-- `MODEL_PATH`：切换不同版本模型
+- `MODEL_PATH`：模型文件路径
 
 ## 训练结果
 
-经过三阶段训练（基础 → 加入着陆速度惩罚 → 放宽下滑道约束微调），最终模型在 5 回合确定性评估中：
+最终模型在 5 回合确定性评估中：
 
 - 平均触地速度约 **0.2 m/s**（目标 0.1 m/s）
 - 平均落点偏差约 **0.04 m**
