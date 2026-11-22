@@ -38,15 +38,6 @@ pip install gymnasium stable-baselines3 numpy matplotlib
 | `checkpoints/` | 微调阶段的检查点 |
 | `assets/` | README 配图（训练曲线、着陆轨迹） |
 
-## 训练
-
-```bash
-python ppo.py
-```
-
-训练曲线（橙线为 30 点滑动平均）：
-
-![训练曲线](assets/training_curves.png)
 
 ## 查看效果
 
