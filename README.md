@@ -36,7 +36,6 @@ pip install gymnasium stable-baselines3 numpy matplotlib
 | `ppo_test.py` | 加载模型并 3D 渲染查看着陆效果 |
 | `model_ppo.zip` | 训练好的模型（当前最佳） |
 | `checkpoints_v3/` | 微调阶段的检查点 |
-| `training*.log` | 各阶段训练日志 |
 | `assets/` | README 配图（训练曲线、着陆轨迹） |
 
 ## 训练
