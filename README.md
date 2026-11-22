@@ -32,11 +32,11 @@ pip install gymnasium stable-baselines3 numpy matplotlib
 | 文件 | 说明 |
 |---|---|
 | `rocket_gym.py` | Gymnasium 环境，包含动力学、奖励、终止判定与渲染 |
-| `ppo.py` | PPO 训练脚本，支持检查点与断点续训 |
+| `ppo.py` | PPO 训练脚本，从零训练并定期保存检查点 |
 | `ppo_test.py` | 加载模型并 3D 渲染查看着陆效果 |
 | `model_ppo.zip` | 训练好的模型（当前最佳） |
-| `checkpoints/` | 微调阶段的检查点 |
-| `assets/` | README 配图（训练曲线、着陆轨迹） |
+| `checkpoints/` | 训练过程中的检查点 |
+| `assets/` | README 配图（着陆轨迹） |
 
 
 ## 查看效果
